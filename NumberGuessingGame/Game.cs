@@ -28,7 +28,7 @@ namespace NumberGuessingGame
 
         public static void Play()
         {
-            targetNumber = 4; //RandomNumber.Next(10) + 1;
+            targetNumber = RandomNumber.Next(10) + 1;
             Console.Write("Guess what number I am thinking of... ");
             Input = Console.ReadLine();
             if (int.TryParse(Input, out playersGuess))
